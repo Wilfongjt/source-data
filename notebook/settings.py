@@ -14,8 +14,6 @@ from pathlib import Path  # python3 only
 env_path = Path('.') / '.env'
 load_dotenv(dotenv_path=env_path)
 
-
-
 # environment variable handler
 from dotenv import load_dotenv
 # junk = os.getenv("junk")
