@@ -31,6 +31,12 @@ def condense_group(group_name,fields,out_file_name, df_source):
         #
 '''
 def condense(out_file_name, df_source,columns=None):
+    '''
+        keeps wanted columns while exporting to csv
+        outfile_name is path and file name of output file i.e "/Users/james/clean/table-name.csv"
+        df_source is a dataframe 
+        columns is a list of columns to keep i.e., ['appointment_id', 'patient_id', 'neighbourhood',...]
+    '''
     #print('out_names: ', out_names)
     #print('out_file_name: ', out_file_name)
     start_time = time.time()
@@ -46,8 +52,9 @@ def condense(out_file_name, df_source,columns=None):
     );
     print('* condense: {} {} sec'.format(out_file_name,time.time() - start_time))  # time_taken is in seconds
 
-
-def clean_source(df_source):
+   
+    
+def clean_source_example(df_source):
     start_time = time.time()
     df_source['appointment_id'] = df_source['appointment_id'].astype(int)
     df_source['patient_id'] = df_source['patient_id'].astype(int)
@@ -150,7 +157,24 @@ def remove_obvious_outliers(_outliers,df):
     '''
     remove individual observations
     remove range of observation
-    remove
+    
+    _outliers is 
+    {
+      'outliers': [
+        {'column':'scheduled_day',
+         'range':(pd.to_datetime('2016-01-01'), pd.to_datetime('2017-01-01')),
+         'reason':'Remove 2015. Appointment in 2015 has many gaps in the timeline numbers'},
+        {'column': 'scheduled_day_of_week',
+         'range': (0,4) ,
+         'reason':'Remove Saturday and Sunday visits. These are so few that they could easily .'},
+        {'column':'lon',
+         'range':(-50.0,-35.0),
+         'reason':'Remove neighbourhoods that have bad longitudes (too far east).'},
+        {'column':'scheduled_hour',
+         'range':(7,20),
+         'reason':'Remove small number of observations at 6:00 and 21:00 hours.'}
+      ]
+    }
 
     '''
     #summary = {}
