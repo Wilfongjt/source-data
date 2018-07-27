@@ -5,9 +5,7 @@ A repository of CSV files
 * Name staged files the same as the data.world destination dataset. world-data/Seed.csv goes to data.world/../Seed dataset. Cuts down on the confusion of what goes where.
 
 # Prerequisites
-* install node
 * install jupyter notebook
-
 
 # Handling New Data
 Goal: Keep data fresh
@@ -25,7 +23,7 @@ Strategy: total replacement of a data.world dataset
 # Get source-data Repository
 * mkdir ~/github
 * cd ~/github
-* git clone https://github.com/Wilfongjt/source-data.git
+* git clone -b refresh-data https://github.com/Wilfongjt/source-data.git
 
 # Process raw-dataset
 * put new or updated data-file in /github/source-data/raw-data/ folder
