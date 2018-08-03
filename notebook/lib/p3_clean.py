@@ -186,7 +186,7 @@ def remove_obvious_outliers(_outliers,df):
 
 
         if 'range' in outlier:
-            print('outlier: ', outlier)
+            # print('outlier: ', outlier)
             
             low = outlier['range'][0]
             high = outlier['range'][1]
@@ -221,7 +221,7 @@ def remove_obvious_outliers(_outliers,df):
     #end_time = time.time()
     #timediff= end_time - start_time
     print('* remove_obvious_outliers: {} sec'.format(time.time() - start_time))   # time_taken is in seconds
-    print(_outliers)
+    # print(_outliers)
     return df #, summary
 
 
