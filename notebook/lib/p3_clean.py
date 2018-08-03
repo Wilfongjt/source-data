@@ -201,22 +201,9 @@ def remove_obvious_outliers(_outliers,df):
                 df = df[(df[col_name].to_datetime() >= low) & (df[col_name].to_datetime() <= high)]
             else:   
                 
-                # Nan, None to number out of range... these will be filtered out in the end
-                # df[col_name] = df[col_name].apply(lambda x: low - 1 if x == ' ' else x)
-                # df[col_name] = df[col_name].apply(lambda x: low - 1 if x != x else x)
-                # df_data[col_name] = df_data[col_name].apply(lambda x: low - 1 if x != x or x == '' or x == ' ' or x == None else x)
-                # df[outlier['column']].replace(None, -1, inplace=True)
-                # df['column'].replace('None', np.nan, inplace=True)
-              
-                # df = df[(df[col_name] >= low) & (df[col_name] <= high)]
-                # df = df[(df[col_name] >= low) & (df[col_name] <= high)]   
-                # print('type: ', col_name, type(df[col_name]))
-                # print('type: df: ', type(df))
-                # print('type: column:  ', col_name, type(df[col_name]))
-                # print('type: ', col_name, type(df[col_name][0]), ' value: ',df[col_name][0])
                 df = df[(df[col_name] >= low) & (df[col_name] <= high)]
             outlier["count"] = sz - len(df)
-            outlier["reason"] = outlier["reason"].format(  str(outlier["count"]) )
+            
             #summary[col_name]['range-drops'] = sz - len(df)
 
         elif 'categories' in outlier:
@@ -227,7 +214,9 @@ def remove_obvious_outliers(_outliers,df):
             sz = len(df)
             df = df[df[col_name].isin(_list)]
             outlier["count"] = sz - len(df)
-
+        if "reason" in outlier:
+                outlier["reason"] = outlier["reason"].format(  str(outlier["count"]) )
+            
             #summary[col_name]['category-drops'] = sz - len(df)
     #end_time = time.time()
     #timediff= end_time - start_time
