@@ -216,7 +216,7 @@ def remove_obvious_outliers(_outliers,df):
                 # print('type: ', col_name, type(df[col_name][0]), ' value: ',df[col_name][0])
                 df = df[(df[col_name] >= low) & (df[col_name] <= high)]
             outlier["count"] = sz - len(df)
-
+            outlier["reason"] = outlier["reason"].format(  str(outlier["count"]) )
             #summary[col_name]['range-drops'] = sz - len(df)
 
         elif 'categories' in outlier:
