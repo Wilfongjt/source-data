@@ -196,12 +196,12 @@ def remove_obvious_outliers(_outliers,df):
             tmp = None
             tmp1 = ''
           
-
             if isinstance(low, np.datetime64):
                 df = df[(df[col_name].to_datetime() >= low) & (df[col_name].to_datetime() <= high)]
             else:   
                 
                 df = df[(df[col_name] >= low) & (df[col_name] <= high)]
+                
             outlier["count"] = sz - len(df)
             
             #summary[col_name]['range-drops'] = sz - len(df)
