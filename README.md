@@ -8,17 +8,24 @@ The idea is a sharable staging area for wrangling data before transfer to an ope
 Use your favorite data processing tool of choice.
 * Jupyter Notebook
 * Python
+* ...
 
 # Wrangling
-* Table Naming
+* Tables
+ * Name
   * A noun is preferred to a verb, Plurals are preferred to singular
-  * A 4 letter table abbreviation is required for tables names more than four characters long  
+  * Provide a table abbreviation: A 3 letter abbreviation is preferred to a 4 letter abbreviation, a 4 letter abreviation is preferred to a longer abbrevation.
 * Table Columns
-  * Column names prefixed with a table abbreviation is preferred to to column names with no prefix. 
-  * Identity field: 
-    * a universally unique identifyer (UUID) is preferred to a locally unique identity (i.e., a primary key), a locally unique identity is preffered to no identity.  
-  * 
-  * 
+  * Column names 
+   * column names prefixed with a table abbreviation preferred to to column names with no prefix.
+   * column names with underscores are preferred to column names with hyphens, column names with hyphens are preferred to column names with spaces, column names with spaces are just not right.
+   * column names in lower case are preferred to everything else
+  * Identity columns:
+   * a universally unique identifyer (UUID) value is preferred to a locally unique identity value, a locally unique identity is preferred to no identity, things with no identity are not things at all. 
+   * Alpha-numeric identity column names should end with the suffix "_id"
+   * Numeric identity column names should end with the suffix "_no"
+     
+ 
 * Missing and Malformed Data
 * Duplicate Data
 * Outliers
