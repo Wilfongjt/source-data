@@ -1,18 +1,24 @@
-# source-data
-A repository of CSV files
+# Project Description:
+The idea is a sharable staging area for wrangling data before transfer to an open data portal (e.g., https://data.world).  The repo stores raw data and wrangling scripts.  Citizen Lab members can push raw data into the repo and authorized members can write scripts to prepare data for transfer to an open data portal.  
 
-# Best Practice
-* Name staged files the same as the data.world destination dataset. world-data/Seed.csv goes to data.world/../Seed dataset. Cuts down on the confusion of what goes where.
+# Maintainers (people with write access):
+* James Wilfong
 
-# Prerequisites
-* install jupyter notebook
+# Tools
+Use your favorite data processing tool of choice.
+* Jupyter Notebook
+* Python
 
-# Handling New Data
-Goal: Keep data fresh
-Strategy: total replacement of a data.world dataset
+# Wrangling
+* Table Naming
+* Column Naming
+* Missing and Malformed Data
+* Duplicate Data
+* Outliers
+
 
 # Process
-* Assemble New Data
+* 
 * Get source-data Repository
 * Process raw-data to clean-data
 * Update source-data Repository
