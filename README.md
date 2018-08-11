@@ -11,36 +11,25 @@ Use your favorite data processing tool of choice.
 * ...
 ## Conventions
 ### Table Names
- * A noun is preferred to a verb, Plurals are preferred to singular
- * Provide a table abbreviation: A 3 letter abbreviation is preferred to a 4 letter abbreviation, a 4 letter abreviation is preferred to a longer abbrevation.
+ * A noun is preferred to a verb, plurals are preferred to singular
+ * Lowercase is preferred to everything else
 ### Column Names
- * column names prefixed with a table abbreviation preferred to to column names with no prefix.
- * column names with underscores are preferred to column names with hyphens, column names with hyphens are preferred to column names with spaces, column names with spaces are just not right.
- * column names in lower case are preferred to everything else
+ * Underscores are the preferred separator.  Spaces and hyphens are not recommended.
+ * Column names prefixed with a table abbreviation are preferred to column names with no prefix.
+ * Lowercase is preferred to everything else
 ### Identity Names
- * Alpha-numeric identity column names should end with the suffix "_id"
-   * Numeric identity column names should end with the suffix "_no"
+ * Alpha-numeric identity values should have column names with the suffix "_id"
+ * Numeric identity column names should have column names with the suffix "_no"
 ### Identity Values
-* a universally unique identifyer (UUID) value is preferred to a locally unique identity value, a locally unique identity is preferred to no identity, things with no identity are not things at all. 
+* A universally unique identifyer (UUID) value is preferred to a locally unique identity value, a locally unique identity is preferred to no identity, things with no identity are not things at all. 
 
 ## Wrangling
-* Tables
-  * Name
  
-  
-* Table Columns
-  * Column names 
-   
-   
-   
-  * Identity columns:
-   
-  
-     
- 
-* Missing and Malformed Data
-* Duplicate Data
-* Outliers
+## Missing and Malformed Data
+
+## Duplicate Data
+
+## Outliers
 
 
 # Process
