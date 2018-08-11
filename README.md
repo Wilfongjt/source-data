@@ -17,7 +17,7 @@ The idea is a sharable staging area for wrangling data before transfer to an ope
 * TBD -  need at least two maintainers 
 
 ## Roles
-* Originator: an originator is usually, but not always, a third party that curates a dataset. Has github privileges to create, clone, and push github branches
+* *Originator*: an originator is usually, but not always, a third party that curates a dataset. Has github privileges to create, clone, and push github branches
 * Developer: a developer writes and runs scripts in development environment, keeps development API key(s). Has github privileges to create, clone, push, and make pull requests on a branch
 * Maintainer: an admin that runs scripts in production environment, keeper of the Citizen Labs API keys(s), Has github privileges to  clone, resolve pull requests
 ## Open Data Portal
