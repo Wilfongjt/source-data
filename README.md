@@ -17,9 +17,11 @@ Use your favorite data processing tool.
 ## Conventions
 ### Open Data Portals
 * Using third party Open Data Portals via an API is preferred to coping a dataset to the Citizen Labs' open data portal
-* Documentation on how to interface with a specific open data portal should be incuded in a applications repo
-*
+* Documentation on how to interface with a specific open data portal should be incuded in a application's repo
+* 
 ### API
+* An API is preferred to a direct connection to a database,   
+### Versioning
 * 
 ### Table Names
  * A noun is preferred to a verb, plurals are preferred to singular
@@ -39,6 +41,8 @@ Use your favorite data processing tool.
 Preparing data for uploading to the open data portal.
 ## Naming
 * Don't change the name of the original source file. You may not be the originator of the file so keep the file as recognizeable to the originator as possible for ease of communications.
+* Use a script to copy original files to an 
+* Script column name changes
  
 ## Missing and Malformed Data
 
