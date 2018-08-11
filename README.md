@@ -4,12 +4,23 @@ The idea is a sharable staging area for wrangling data before transfer to an ope
 ## Maintainers (people with write access):
 * James Wilfong
 
-## Tools
-Use your favorite data processing tool of choice.
+## Actors
+* Originator: an originator is usually a third party that has curated the data.  
+## Open Data Portal
+* https://data.world
+
+## Scripting Tools
+Use your favorite data processing tool.
 * Jupyter Notebook
 * Python
 * ...
 ## Conventions
+### Open Data Portals
+* Using third party Open Data Portals via an API is preferred to coping a dataset to the Citizen Labs' open data portal
+* Documentation on how to interface with a specific open data portal should be incuded in a applications repo
+*
+### API
+* 
 ### Table Names
  * A noun is preferred to a verb, plurals are preferred to singular
  * Underscores are the preferred separator.  Spaces and hyphens are not recommended.
@@ -25,8 +36,9 @@ Use your favorite data processing tool of choice.
 * A universally unique identifyer (UUID) value is preferred to a locally unique identity value, a locally unique identity is preferred to no identity, things with no identity are not things at all. 
 
 ## Wrangling
-### Preparing data for uploading to a data sharing service.
-## 
+Preparing data for uploading to the open data portal.
+## Naming
+* Don't change the name of the original source file. You may not be the originator of the file so keep the file as recognizeable to the originator as possible for ease of communications.
  
 ## Missing and Malformed Data
 
