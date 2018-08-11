@@ -12,6 +12,7 @@ Use your favorite data processing tool of choice.
 ## Conventions
 ### Table Names
  * A noun is preferred to a verb, plurals are preferred to singular
+ * Underscores are the preferred separator.  Spaces and hyphens are not recommended.
  * Lowercase is preferred to everything else
 ### Column Names
  * Underscores are the preferred separator.  Spaces and hyphens are not recommended.
@@ -24,6 +25,8 @@ Use your favorite data processing tool of choice.
 * A universally unique identifyer (UUID) value is preferred to a locally unique identity value, a locally unique identity is preferred to no identity, things with no identity are not things at all. 
 
 ## Wrangling
+### Preparing data for uploading to a data sharing service.
+## 
  
 ## Missing and Malformed Data
 
