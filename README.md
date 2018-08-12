@@ -32,3 +32,13 @@ Strategy: total replacement of a data.world dataset
 * jupyter-notebook
 * using jupyter, open Process.ipynb
 * from jupyter, run all the cells
+
+
+| Originator | Developer | Maintainer |
+| :--------- | :-------- | ---------- |
+| Clone Repo Branch | | |
+| Add new dataset | | | 
+| Push data to Repo | | |
+| Create Pull Request | | |
+
+
