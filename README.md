@@ -34,11 +34,25 @@ Strategy: total replacement of a data.world dataset
 * from jupyter, run all the cells
 
 
-| Originator | Developer | Maintainer |
-| :--------- | :-------- | ---------- |
-| Clone Repo Branch | | |
-| Add new dataset | | | 
-| Push data to Repo | | |
-| Create Pull Request | | |
+| Originator              | -> | Developer                  | Maintainer                  |
+| :---------------------- | :- | :------------------------- | --------------------------- |
+| Download refresh-data branch |    |                       |    |                              |
+| Add New Dataset         |    |                            |    |                              | 
+| Upload Data to Repo     |    |                            |    |                              |
+| Notify Developer        | -> | Download Data from Repo    |    |                              |
+|                         |    | Setup Dev Data Environment |    |                              |
+|                         |    | Write/Update Script        |    |                              |
+|                         |    | Test Script in Dev         |    |                              |
+|                         |    | Test Data Load in Dev      |    |                              |
+|                         |    | Test Application           |    |                              |
+|                         |    | Upload Script              |    |                              |
+|                         |    | Notify Maintainer ->       |    | Download refresh-data Branch | 
+|                         |    |                            |    | Setup Prod Data Environment  | 
+|                         |    |                            |    | Deploy to Production         |
+|                         |    |                            |    | Deployment Check             |
+| Deployment Check        |    |                            | <- | Notify Originator            |
+| Approve Deployment      |    |                            |    |                              |
+| Notify Maintainer       | -> |                            |    | Update Master Branch         |
+
 
 
