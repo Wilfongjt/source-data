@@ -55,24 +55,23 @@ This is a best case scenario with no failures. Use as a guide to a successful co
 
 ## Conventions and Expectations
 ### Open Data Portals
-* Using third party Open Data Portals via an API is preferred to copying a dataset to the Citizen Labs' open data portal
-* Documentation on how to interface with a specific open data portal should be included in an application's repo
+An Open Data Portal stores digital versions of places, things, and ideas.
+* Using third party Open Data Portal is preferred to hosting open data in Citizen Labs' open data portal, Using the Citizen Labs’ open data portal is preferred using nothing
 ### API
+Application Programming Interfaces are a fundamental part of sharing. 
 * An API is preferred to a direct connection to a database. Direct connections are discouraged. 
 * Maintainers should keep Citizen Labs’ API keys in a secure place
 * Developers should keep personal/development API keys in a secure place
 * Originators should not need API keys 
 ### Versioning
-Versioning is a way to allow structural changes to a table without breaking consuming applications.  Well at least not breaking them right away.   
+Versioning allows structural changes in a table to occur without breaking the application(s).  Well at least not breaking them right away.   
 * Be nice to other applications sharing a dataset by versioning 
 * A new version is required when a column name changes
 * A new version is required when adding a column to an existing version
 * Versions should be few, no more than 3 version are in the open data portal at a time
 * When a fourth version is required, the first version is removed
-### Clean File Names
-Clean files are final version of a dataset before it is transferred to the open data portal
-*    data.world use the clean file name as its default when naming a table
 ### Table Names
+
 * A noun is preferred to a verb when naming tables
 * Plurals are preferred to singular nouns when naming tables
 * Underscores are the preferred separator.  Spaces and hyphens are not recommended.
@@ -87,6 +86,10 @@ Clean files are final version of a dataset before it is transferred to the open 
  * Numeric identity column names should have column names with the suffix "_no"
 ### Identity Values
 * A universally unique identifier (UUID) value is preferred to a locally unique identity value, a locally unique identity is preferred to no identity, things with no identity are not things at all. 
+### Date Values
+* ISO 8601 date standard is preferred to any other standard  
+### Geographic Object Values
+* OGC WKT is preferred to proprietary formats
 ## Wrangling
 Preparing data for uploading to the open data portal.
 Environment Variables (.env)
@@ -102,7 +105,13 @@ Environment Variables (.env)
 * Open Data is about things     
 ### Outliers
 * establish and document boundaries for column values in scripts
-*                     
+
+    
+
+
+
+
+
     
 
 
