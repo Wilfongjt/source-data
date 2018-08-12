@@ -34,25 +34,23 @@ Strategy: total replacement of a data.world dataset
 * from jupyter, run all the cells
 
 
-| Originator              | -> | Developer                  | Maintainer                  |
-| :---------------------- | :- | :------------------------- | --------------------------- |
-| Download refresh-data branch |    |                       |    |                              |
+| Originator          |    | Developer              |    | Maintainer               |
+| :---------------------- | :- | :------------------------- | :- | :--------------------------- |
+| Download refresh-data Branch |    |                       |    |                              |
 | Add New Dataset         |    |                            |    |                              | 
-| Upload Data to Repo     |    |                            |    |                              |
-| Notify Developer        | -> | Download Data from Repo    |    |                              |
+| Upload refresh-data Branch |    |                         |    |                              |
+| Notify Developer        | > | Download refresh-data Branch |    |                            |
 |                         |    | Setup Dev Data Environment |    |                              |
 |                         |    | Write/Update Script        |    |                              |
 |                         |    | Test Script in Dev         |    |                              |
 |                         |    | Test Data Load in Dev      |    |                              |
 |                         |    | Test Application           |    |                              |
-|                         |    | Upload Script              |    |                              |
-|                         |    | Notify Maintainer ->       |    | Download refresh-data Branch | 
+|                         |    | Upload refresh-data Branch |    |                              |
+|                         |    | Notify Maintainer          | > | Download refresh-data Branch | 
 |                         |    |                            |    | Setup Prod Data Environment  | 
 |                         |    |                            |    | Deploy to Production         |
 |                         |    |                            |    | Deployment Check             |
-| Deployment Check        |    |                            | <- | Notify Originator            |
+| Deployment Check        |    |                            | < | Notify Originator            |
 | Approve Deployment      |    |                            |    |                              |
-| Notify Maintainer       | -> |                            |    | Update Master Branch         |
-
-
+| Notify Maintainer       | > |                            |    | Update master Branch         |
 
