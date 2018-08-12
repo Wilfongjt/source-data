@@ -1,5 +1,4 @@
 Title: TBD
-
 # SLACK CHANNEL TBD
 
 # Project Description:
@@ -9,6 +8,11 @@ With some effort, we can create a repository of data and scripts to facilitate f
 
 # Table of Contents
 TBD
+
+## Originators
+* TBD  
+## Developers
+* James Wilfong   
 ## Maintainers (people with write access):
 * TBD -  need at least two maintainers 
 
@@ -92,11 +96,13 @@ Environment Variables (.env)
 * Rename columns
 * Script column name changes
 ### Missing and Malformed Data
-* drop entire record when Identity value is empty
-* drop 
+* dropping entire record when Identity value is empty
 ### Duplicate Data
 * UUID should not duplicate   
 * Open Data is about things     
 ### Outliers
 * establish and document boundaries for column values in scripts
-*         
+*                     
+    
+
+
