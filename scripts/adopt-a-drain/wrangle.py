@@ -123,3 +123,26 @@ def loadDataWorld(tbl_def):
         license=tbl_def['license'],
         files=tbl_def["files"]
     )
+    
+def updateDataWorld():
+    '''
+        Takes a csv file and imports it into dataworld
+        tbl_def is { "owner_id": DW_USER, 
+                     "dw_title": table_name, 
+                     "gh_url": GH_URL + table_name, 
+                     "visibility": "OPEN", 
+                     "license": "Public Domain",
+                     "files": {table_name + '.csv': {"url": GH_URL + table_name + '.csv'}},
+                     "dw_url": DW_DB_URL + table_name + '.csv',
+                     "dw_dataset_key": DW_USER + "/" + table_name
+                    }
+                    
+    '''
+    # owner_id=tbl_def["owner_id"], 
+    dw.api_client().update_dataset(    
+        
+        title=tbl_def["dw_title"], 
+        visibility=tbl_def["visibility"],
+        license=tbl_def['license'],
+        files=tbl_def["files"]
+    )
