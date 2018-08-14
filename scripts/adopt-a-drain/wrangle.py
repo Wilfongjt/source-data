@@ -4,7 +4,7 @@ import datadotworld as dw
 import time
 
 def wrangle_github(df_source, tbl, cell_log):
-    print('* wrangle github')
+    # print('* wrangle github')
     '''
             run extra git commands
             run import to data.word
@@ -54,7 +54,7 @@ def wrangle_data_world(df_source, tbl, cell_log):
     '''
     --------------------------------- Data World Process 
     '''
-    print('* wrangle data world')
+    # print('* wrangle data world')
     
     cell_log.collect('')
     cell_log.collect('# Data.World Process')
