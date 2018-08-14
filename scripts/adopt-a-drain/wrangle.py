@@ -101,4 +101,25 @@ def deleteDataWorld(tbl_def):
     )
         
 
-
+def loadDataWorld(tbl_def):
+    '''
+        Takes a csv file and imports it into dataworld
+        tbl_def is { "owner_id": DW_USER, 
+                     "dw_title": table_name, 
+                     "gh_url": GH_URL + table_name, 
+                     "visibility": "OPEN", 
+                     "license": "Public Domain",
+                     "files": {table_name + '.csv': {"url": GH_URL + table_name + '.csv'}},
+                     "dw_url": DW_DB_URL + table_name + '.csv' 
+                    }
+                    
+    '''
+    # api_client.create_dataset(
+    dw.api_client().create_dataset(    
+        owner_id=tbl_def["owner_id"], 
+        title=tbl_def["dw_title"], 
+        description=tbl_def["dw_desc"],
+        visibility=tbl_def["visibility"],
+        license=tbl_def['license'],
+        files=tbl_def["files"]
+    )
