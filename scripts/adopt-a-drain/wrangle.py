@@ -26,6 +26,7 @@ def wrangle_github(df_source, tbl, cell_log):
     scripts_folder = '../../scripts'
     readme = '../../README.md'
     git_target_folder_list = [raw_folder,clean_folder,scripts_folder,readme]
+    
     # execute git commands
     for target in git_target_folder_list:
         cell_log.collect('* git add {} -A'.format(target))
@@ -34,16 +35,16 @@ def wrangle_github(df_source, tbl, cell_log):
     # --------------------------------- git commit
     cell_log.collect('* git commit -m "update raw-data, clean-data, and scripts"' )
 
-        try:
-            output = subprocess.check_output(["git", "commit", "-m", "'update raw-data, clean-data, and script files'"])
-        except subprocess.CalledProcessError as error:
-            print(error)
-        except:
-            cell_log.collect('* unknown error' )
+    try:
+        output = subprocess.check_output(["git", "commit", "-m", "'update raw-data, clean-data, and script files'"])
+    except subprocess.CalledProcessError as error:
+        print(error)
+    except:
+        cell_log.collect('* unknown error' )
 
-            # --------------------------------- git push
-            cell_log.collect('* git push origin ' + repo_branch)
-            output = subprocess.check_output(["git", "push", "origin", repo_branch])
+        # --------------------------------- git push
+        cell_log.collect('* git push origin ' + repo_branch)
+        output = subprocess.check_output(["git", "push", "origin", repo_branch])
 
 
     
