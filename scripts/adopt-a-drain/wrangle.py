@@ -79,4 +79,24 @@ def wrangle_data_world(df_source, tbl, cell_log):
         print('RestApiException create: ' + str(ex) )
         cell_log.collect('* LOAD FAIL: {}'.format(str(ex)))
 
+    
+def deleteDataWorld(tbl_def):
+    '''
+    Removes table from data.world
+    tbl_def is { "owner_id": DW_USER, 
+                     "dw_title": table_name, 
+                     "gh_url": GH_URL + table_name, 
+                     "visibility": "OPEN", 
+                     "license": "Public Domain",
+                     "files": {table_name + '.csv': {"url": GH_URL + table_name + '.csv'}},
+                     "dw_url": DW_DB_URL + table_name + '.csv',
+                     "dataset_id": DW_USER + "/" + table_name
+                    }
+    '''
+    
+    dw.api_client().delete_dataset(       
+        tbl_def["dw_dataset_id"]
+    )
+        
+
 
