@@ -54,7 +54,7 @@ def data_world(df_source, tbl, cell_log):
     --------------------------------- Data World Process 
     run import to data.word
     '''
-    print('* wrangle data world')
+    # print('* wrangle data world')
     
     cell_log.collect('')
     cell_log.collect('# Data.World Process')
