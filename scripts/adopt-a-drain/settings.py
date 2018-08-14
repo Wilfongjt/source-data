@@ -1,4 +1,5 @@
 import os
+
 from dotenv import load_dotenv
 
 print('settings')
@@ -21,8 +22,8 @@ from dotenv import load_dotenv
 
 
 DW_USER = os.getenv("DW_USER")
-# GH_URL = os.getenv("GH_URL")
-# DW_DB_URL = os.getenv("DW_DB_URL")
+GH_URL = os.getenv("GH_URL")
+DW_DB_URL = os.getenv("DW_DB_URL")
 DW_AUTH_TOKEN = os.getenv("DW_AUTH_TOKEN")
 # DW_DB_RW_TOKEN = os.getenv("DW_DB_RW_TOKEN")
 
