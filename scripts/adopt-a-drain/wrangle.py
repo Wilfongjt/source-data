@@ -1,6 +1,7 @@
 import subprocess
 from datadotworld.client.api import RestApiError
 import datadotworld as dw
+import time
 
 def wrangle_github(df_source, tbl, cell_log):
     print('* wrangle github')
