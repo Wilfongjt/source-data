@@ -3,11 +3,10 @@ from datadotworld.client.api import RestApiError
 import datadotworld as dw
 import time
 
-def wrangle_github(df_source, tbl, cell_log):
+def github(df_source, tbl, cell_log):
     # print('* wrangle github')
     '''
-            run extra git commands
-            run import to data.word
+            run git commands
     '''
     '''
         --------------------------------- GIT Process 
@@ -49,10 +48,11 @@ def wrangle_github(df_source, tbl, cell_log):
 
     
 
-def wrangle_data_world(df_source, tbl, cell_log):
+def data_world(df_source, tbl, cell_log):
     
     '''
     --------------------------------- Data World Process 
+    run import to data.word
     '''
     print('* wrangle data world')
     
