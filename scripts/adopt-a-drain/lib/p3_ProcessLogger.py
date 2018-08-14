@@ -36,6 +36,8 @@ class ProcessLogger:
     def clear(self):
         self.markdown_list = []
         return self
+    def show(self):
+        print( self.markdown_list )
 
 def main():
     pl = ProcessLogger()
