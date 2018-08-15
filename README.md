@@ -1,7 +1,7 @@
-Data.World
-# SLACK CHANNEL TBD
-
+# Data.World
+**SLACK CHANNEL: TBD**
 # Project Description:
+
 The idea is a sharable staging area for wrangling data before transfer to an open data portal (e.g., https://data.world).  The repo stores raw data and wrangling scripts.  Citizen Lab members can push raw data into the repo and authorized members can write scripts to prepare data for transfer to an open data portal.  
 
 With some effort, we can create a repository of data and scripts to facilitate future data wrangling and help keep our open data manageable. 
