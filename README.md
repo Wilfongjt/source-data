@@ -13,6 +13,8 @@ With some effort, we can create a repository of data and scripts to facilitate f
 * [Data Flow](#data-flow)
 * [Process Overview](#process-overview)
 * [Data Processing](#data-processing)
+* [Expectations](#docs/expectations.md)
+* [Wrangling](#docs/wrangling.md)
 
 ### <a id="definitions">Definitions</a> 
 * [Comma Separated Values](https://en.wikipedia.org/wiki/Comma-separated_values) (CSV).  CSV is a method of formatting values in a text file. 

@@ -1,5 +1,6 @@
 # Data.World
 **SLACK CHANNEL: TBD**
-# Maintainer Instructions:
+# Developer Instructions:
 
+# Maintainer Instructions:
 
