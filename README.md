@@ -27,6 +27,7 @@ With some effort, we can create a repository of data and scripts to facilitate f
 
 ## <a id="process-roles">Process Roles</a>
 Declares the duties of members.
+
 | Curator                  | Developer                     | Maintainer                |
 | :------------------      | :---------------------        | :-----------------------  |
 | Curates dataset(s)       | Writes/Updates scripts        | Puts data into production |
@@ -41,6 +42,7 @@ Declares the duties of members.
 
 ## <a id="data-flow">Data Flow</a>
 The path which data moves through the process.
+
 | Local      |    | GitHub     |    | Data.World.Test |    | Data.World.Prod |
 | :-         | :- | :-         | :- | :-              | :- | :- |
 | Curator    | >  | raw-data   |    |                 |    |  |
@@ -75,7 +77,10 @@ This is a best case scenario with no failures. Use as a guide to a successful co
 
 
 
-
+## <a id="data-processing">Data Processing</a>
+* Curator 
+* Developer
+* Maintainer 
 
 
 
