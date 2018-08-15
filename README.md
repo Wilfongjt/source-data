@@ -6,16 +6,15 @@ The idea is a sharable staging area for wrangling data before transfer to an ope
 
 With some effort, we can create a repository of data and scripts to facilitate future data wrangling and help keep our open data manageable. 
 
-# Table of Contents
-* Definitions        
+### Table of Contents
+* [Definitions](#definitions)        
 * Roles
-* Data Flow
 * Process Roles
+* Data Flow
 * Process Overview
 * Data Processing
 
-
-## Definitions
+### <a id="definitions">Definitions</a> 
 * [Comma Separated Values](https://en.wikipedia.org/wiki/Comma-separated_values) (CSV).  CSV is a method of formatting values in a text file. 
 * [GitHub](https://en.wikipedia.org/wiki/GitHub) is a technology for versioning files.
 
