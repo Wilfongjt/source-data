@@ -28,6 +28,7 @@ With some effort, we can create a repository of data and scripts to facilitate f
 * James W - Developer: [raw-data](raw-data), [clean-data](raw-data), [scripts](scripts/)
 * Jace B - Maintainer: - [scripts](scripts/)
 * TBD - Maintainer: [scripts](scripts/)
+
 | Name       | Role           | [Raw-data](raw-data/)  | [Clean-data](clean-data/) | [Scripts](scripts/) |
 | :-              | :-                | :-               | :-                 |  :-         |
 | Cara D     | Curator      |  x |   |     |
