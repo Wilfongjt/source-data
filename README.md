@@ -25,9 +25,9 @@ With some effort, we can create a repository of data and scripts to facilitate f
 ## <a id="members">Members</a>
 * Cara D - Curator: [raw-data](raw-data/)
 * Eileen B - Curator: [raw-data](raw-data/)
-* James Wilfong - Developer: [raw-data](raw-data), [clean-data](raw-data), [scripts](scripts/))    
+* James Wilfong - Developer: [raw-data](raw-data), [clean-data](raw-data), [scripts](scripts/)
 * Jace B: Maintainer - [scripts](scripts/)
-* TBD  ([Maintainer]())
+* TBD -  Maintainer [scripts](scripts/)
 
 ## <a id="process-roles">Process Roles</a>
 Declares the duties of members.
