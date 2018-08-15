@@ -23,14 +23,14 @@ With some effort, we can create a repository of data and scripts to facilitate f
 * Open Data Portal is technology that facilitates the sharing of a dataset(s) via an application programming interface (API)
 
 ## <a id="members">Members</a>
-Members and folder access
+Members and areas of responsibility.
 
 | Name       | Role           | [Raw-data](raw-data/)  | [Clean-data](clean-data/) | [Scripts](scripts/) |
-| :-              | :-                | :-               | :-                 |  :-         |
-| Cara D     | Curator      |  x |   |     |
-| Eileen B   | Curator      | x |    |     |
-| James W | Developer  | x | x |  x |
-| Jace B     | Maintainer |    |    |  x  |
+| :-              | :-                | :-:              | :-:                |  :-:        |
+| Cara D     | Curator      | [X](raw-data/) | [X](clean-data/)  |     |
+| Eileen B   | Curator      | [X](raw-data/) |    |     |
+| James W | Developer  | [X](raw-data/) | [X](clean-data/) | [X](scripts/)  |
+| Jace B     | Maintainer |    |    |  [X](scripts/)  |
 
 
 
