@@ -1,4 +1,4 @@
-Title: TBD
+Data.World
 # SLACK CHANNEL TBD
 
 # Project Description:
@@ -7,106 +7,74 @@ The idea is a sharable staging area for wrangling data before transfer to an ope
 With some effort, we can create a repository of data and scripts to facilitate future data wrangling and help keep our open data manageable. 
 
 # Table of Contents
-TBD
+* Definitions        
+* Roles
+* Data Flow
+* Process Roles
+* Process Overview
+* Data Processing
 
-## Originators
+
+## Definitions
+* [Comma Separated Values](https://en.wikipedia.org/wiki/Comma-separated_values) (CSV).  CSV is a method of formatting values in a text file. 
+* [GitHub](https://en.wikipedia.org/wiki/GitHub) is a technology for versioning files.
+
+## Roles
+### Curators
 * TBD  
-## Developers
+### Developers
 * James Wilfong   
-## Maintainers (people with write access):
+### Maintainers (people with write access):
 * TBD -  need at least two maintainers 
 
-# Process
-## Roles
-| Originator              | Developer                | Maintainer                |
-| :------------------     | :---------------------   | :-----------------------  |
-| Curates dataset         | Writes scripts           | Puts data into production |
-| Initiates data transfer | Tests data transfer      | Removes data from production |
-| Maintains GIT raw-data  | Maintains GIT scripts    | Maintains Versions | 
-|                         | Maintains GIT tmp-data   | Maintains the GIT master branch |
-|                         | Maintains GIT clean-data | Keeps Production API Keys
-|                         | Keeps Dev/Test API Keys |  |
+## Data Flow
 
+| Local      |    | GitHub     |    | Data.World.Test |    | Data.World.Prod |
+| :-         | :- | :-         | :- | :-              | :- | :- |
+| Curator    | >  | raw-data   |    |                 |    |  |
+| Developer  | <  | raw-data   |    |                 |    |  |
+|            | >  | clean-data | >  | test-data       |    |  | 
+| Maintainer | <  | clean-data |    |                 |    |  |
+|            | >  |            |    |                 | >  | open-data |
+| App(s)     | <  |            |    |                 | <  | open-data |
+
+## Process Roles
+| Curator                  | Developer                     | Maintainer                |
+| :------------------      | :---------------------        | :-----------------------  |
+| Curates dataset(s)       | Writes/Updates scripts        | Puts data into production |
+| Loads raw dataset to GIT | Tests dataset load            | Removes data from production |
+| Creates GIT pull request | Maintains GIT scripts folder  |  | 
+| Signoff on Prod dataset load  | Maintains GIT tmp-data folder | Maintains the GIT master branch |
+|                          | Maintains clean-data folder   | Maintains the Prod Environment |
+|                          | Creates clean-data set        |  |
+|                          | Maintains Dev Environment     |  |
+|                          | Creates GIT pull request      |  |
+|                          | Adds raw-data  sub-folders    |  |
 ## Process Overview
 This is a best case scenario with no failures. Use as a guide to a successful completion of the process.   
 
-| Originator          |    | Developer              |    | Maintainer               |
+| Curator                 |    | Developer                  |    | Maintainer                   |
 | :---------------------- | :- | :------------------------- | :- | :--------------------------- |
-| Download refresh-data Branch |    |                       |    |                              |
-| Add New Dataset         |    |                            |    |                              | 
-| Upload refresh-data Branch |    |                         |    |                              |
-| Notify Developer        | > | Download refresh-data Branch |    |                            |
-|                         |    | Setup Dev Data Environment |    |                              |
+| Prepare Dataset CSV |     |    |                            |    |                              |
+| Upload Dataset          |    |                            |    |                              | 
+| Create GIT pull request |    |                            |    |                              | 
+| Notify Developer        | >  | Download Repo              |    |                              |
+|                         |    | Setup Environment Variables |    |                             |
 |                         |    | Write/Update Script        |    |                              |
-|                         |    | Test Script in Dev         |    |                              |
-|                         |    | Test Data Load in Dev      |    |                              |
+|                         |    | Test Script                |    |                              |
+|                         |    | Test Data Load             |    |                              |
 |                         |    | Test Application           |    |                              |
-|                         |    | Upload refresh-data Branch |    |                              |
-|                         |    | Notify Maintainer          | > | Download refresh-data Branch | 
+|                         |    | Upload Branch              |    |                              |
+|                         |    | Notify Maintainer          | >  | Download refresh-data Branch | 
 |                         |    |                            |    | Setup Prod Data Environment  | 
 |                         |    |                            |    | Deploy to Production         |
 |                         |    |                            |    | Deployment Check             |
-| Deployment Check        |    |                            | < | Notify Originator            |
+| Deployment Check        |    |                            | <  | Notify Curator               |
 | Approve Deployment      |    |                            |    |                              |
-| Notify Maintainer       | > |                            |    | Update master Branch         |
+| Notify Maintainer       | >  |                            |    | Update master Branch         |
 
-## Open Data Portal
-* https://data.world
 
-## Conventions and Expectations
-### Open Data Portals
-An Open Data Portal stores digital versions of places, things, and ideas.
-* Using third party Open Data Portal is preferred to hosting open data in Citizen Labs' open data portal, Using the Citizen Labs’ open data portal is preferred using nothing
-### API
-Application Programming Interfaces are a fundamental part of sharing. 
-* An API is preferred to a direct connection to a database. Direct connections are discouraged. 
-* Maintainers should keep Citizen Labs’ API keys in a secure place
-* Developers should keep personal/development API keys in a secure place
-* Originators should not need API keys 
-### Versioning
-Versioning allows structural changes in a table to occur without breaking the application(s).  Well at least not breaking them right away.   
-* Be nice to other applications sharing a dataset by versioning 
-* A new version is required when a column name changes
-* A new version is required when adding a column to an existing version
-* Versions should be few, no more than 3 version are in the open data portal at a time
-* When a fourth version is required, the first version is removed
-### Table Names
 
-* A noun is preferred to a verb when naming tables
-* Plurals are preferred to singular nouns when naming tables
-* Underscores are the preferred separator.  Spaces and hyphens are not recommended.
-* Lowercase is preferred to everything else
-* Don't change the name of the original source file. You may not be the originator of the file so keep the file as recognizable to the originator as possible for ease of communications.
-### Column Names
- * Underscores are the preferred separator.  Spaces and hyphens are not recommended.
- * Column names prefixed with a table abbreviation are preferred to column names with no prefix.
- * Lowercase is preferred to everything else
-### Identity Names
- * Alphanumeric identity values should have column names with the suffix "_id"
- * Numeric identity column names should have column names with the suffix "_no"
-### Identity Values
-* A universally unique identifier (UUID) value is preferred to a locally unique identity value, a locally unique identity is preferred to no identity, things with no identity are not things at all. 
-### Date Values
-* ISO 8601 date standard is preferred to any other standard  
-### Geographic Object Values
-* OGC WKT is preferred to proprietary formats
-## Wrangling
-Preparing data for uploading to the open data portal.
-Environment Variables (.env)
-### Naming
-* Rename source-data file name
-* Script table name changes to a copy in the temp-data folder
-* Rename columns
-* Script column name changes
-### Missing and Malformed Data
-* dropping entire record when Identity value is empty
-### Duplicate Data
-* UUID should not duplicate   
-* Open Data is about things     
-### Outliers
-* establish and document boundaries for column values in scripts
-
-    
 
 
 
