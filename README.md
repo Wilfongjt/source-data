@@ -17,6 +17,8 @@ With some effort, we can create a repository of data and scripts to facilitate f
 ### <a id="definitions">Definitions</a> 
 * [Comma Separated Values](https://en.wikipedia.org/wiki/Comma-separated_values) (CSV).  CSV is a method of formatting values in a text file. 
 * [GitHub](https://en.wikipedia.org/wiki/GitHub) is a technology for versioning files.
+* [Open Data](https://en.wikipedia.org/wiki/Open_data)
+* Open Data Portal is technology that facilitates the sharing of a dataset(s) via an application programming interface (API)
 
 ## <a id="members">Members</a>
 * Cara D (Curator)
