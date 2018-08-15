@@ -21,11 +21,13 @@ With some effort, we can create a repository of data and scripts to facilitate f
 
 ## Roles
 ### Curators
-* TBD  
+* Cara D
+* Eileen B
 ### Developers
 * James Wilfong   
 ### Maintainers (people with write access):
-* TBD -  need at least two maintainers 
+* Jace B
+* TBD  
 
 ## Process Roles
 | Curator                  | Developer                     | Maintainer                |
