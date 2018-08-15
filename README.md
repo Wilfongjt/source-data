@@ -27,17 +27,6 @@ With some effort, we can create a repository of data and scripts to facilitate f
 ### Maintainers (people with write access):
 * TBD -  need at least two maintainers 
 
-## Data Flow
-
-| Local      |    | GitHub     |    | Data.World.Test |    | Data.World.Prod |
-| :-         | :- | :-         | :- | :-              | :- | :- |
-| Curator    | >  | raw-data   |    |                 |    |  |
-| Developer  | <  | raw-data   |    |                 |    |  |
-|            | >  | clean-data | >  | test-data       |    |  | 
-| Maintainer | <  | clean-data |    |                 |    |  |
-|            | >  |            |    |                 | >  | open-data |
-| App(s)     | <  |            |    |                 | <  | open-data |
-
 ## Process Roles
 | Curator                  | Developer                     | Maintainer                |
 | :------------------      | :---------------------        | :-----------------------  |
@@ -50,6 +39,18 @@ With some effort, we can create a repository of data and scripts to facilitate f
 |                          | Maintains Dev Environment     |  |
 |                          | Creates GIT pull request      |  |
 |                          | Adds raw-data  sub-folders    |  |
+
+## Data Flow
+
+| Local      |    | GitHub     |    | Data.World.Test |    | Data.World.Prod |
+| :-         | :- | :-         | :- | :-              | :- | :- |
+| Curator    | >  | raw-data   |    |                 |    |  |
+| Developer  | <  | raw-data   |    |                 |    |  |
+|            | >  | clean-data | >  | test-data       |    |  | 
+| Maintainer | <  | clean-data |    |                 |    |  |
+|            | >  |            |    |                 | >  | open-data |
+| App(s)     | <  |            |    |                 | <  | open-data |
+
 ## Process Overview
 This is a best case scenario with no failures. Use as a guide to a successful completion of the process.   
 
