@@ -8,27 +8,25 @@ With some effort, we can create a repository of data and scripts to facilitate f
 
 ### Table of Contents
 * [Definitions](#definitions)        
-* Roles
-* Process Roles
-* Data Flow
-* Process Overview
-* Data Processing
+* [Members](#members)
+* [Process Roles](#process-roles)
+* [Data Flow](#data-flow)
+* [Process Overview](#process-overview)
+* [Data Processing](#data-processing)
 
 ### <a id="definitions">Definitions</a> 
 * [Comma Separated Values](https://en.wikipedia.org/wiki/Comma-separated_values) (CSV).  CSV is a method of formatting values in a text file. 
 * [GitHub](https://en.wikipedia.org/wiki/GitHub) is a technology for versioning files.
 
-## Roles
-### Curators
-* Cara D
-* Eileen B
-### Developers
-* James Wilfong   
-### Maintainers (people with write access):
-* Jace B
-* TBD  
+## <a id="members">Members</a>
+* Cara D (Curator)
+* Eileen B (Curator)
+* James Wilfong (Developer)    
+* Jace B (Maintainer)
+* TBD  (Maintainer)
 
-## Process Roles
+## <a id="process-roles">Process Roles</a>
+Declares the duties of members.
 | Curator                  | Developer                     | Maintainer                |
 | :------------------      | :---------------------        | :-----------------------  |
 | Curates dataset(s)       | Writes/Updates scripts        | Puts data into production |
@@ -41,8 +39,8 @@ With some effort, we can create a repository of data and scripts to facilitate f
 |                          | Creates GIT pull request      |  |
 |                          | Adds raw-data  sub-folders    |  |
 
-## Data Flow
-
+## <a id="data-flow">Data Flow</a>
+The path which data moves through the process.
 | Local      |    | GitHub     |    | Data.World.Test |    | Data.World.Prod |
 | :-         | :- | :-         | :- | :-              | :- | :- |
 | Curator    | >  | raw-data   |    |                 |    |  |
@@ -52,7 +50,7 @@ With some effort, we can create a repository of data and scripts to facilitate f
 |            | >  |            |    |                 | >  | open-data |
 | App(s)     | <  |            |    |                 | <  | open-data |
 
-## Process Overview
+## <a id="process-overview">Process Overview</a>
 This is a best case scenario with no failures. Use as a guide to a successful completion of the process.   
 
 | Curator                 |    | Developer                  |    | Maintainer                   |
