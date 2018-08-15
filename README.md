@@ -21,7 +21,7 @@ With some effort, we can create a repository of data and scripts to facilitate f
 * Open Data Portal is technology that facilitates the sharing of a dataset(s) via an application programming interface (API)
 
 ## <a id="members">Members</a>
-* Cara D (Curator)
+* Cara D ([Curator](raw-data/README.md))
 * Eileen B (Curator)
 * James Wilfong (Developer)    
 * Jace B (Maintainer)
