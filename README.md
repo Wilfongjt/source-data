@@ -4,7 +4,9 @@
 
 The idea is a sharable staging area for wrangling data before transfer to an open data portal (e.g., https://data.world).  The repo stores raw data and wrangling scripts.  Citizen Lab members can push raw data into the repo and authorized members can write scripts to prepare data for transfer to an open data portal.  
 
-With some effort, we can create a repository of data and scripts to facilitate future data wrangling and help keep our open data manageable. 
+With some effort, we can create a repository of data and scripts to facilitate future data wrangling and help keep our open data manageable.
+
+Hi 
 
 ### Table of Contents
 * [Definitions](#definitions)        
@@ -16,8 +18,8 @@ With some effort, we can create a repository of data and scripts to facilitate f
 * [Expectations](docs/expectations.md)
 * [Wrangling](docs/wrangling.md)
 
-### <a id="definitions">Definitions</a> 
-* [Comma Separated Values](https://en.wikipedia.org/wiki/Comma-separated_values) (CSV).  CSV is a method of formatting values in a text file. 
+### <a id="definitions">Definitions</a>
+* [Comma Separated Values](https://en.wikipedia.org/wiki/Comma-separated_values) (CSV).  CSV is a method of formatting values in a text file.
 * [GitHub](https://en.wikipedia.org/wiki/GitHub) is a technology for versioning files.
 * [Open Data](https://en.wikipedia.org/wiki/Open_data)
 * Open Data Portal is technology that facilitates the sharing of a dataset(s) via an application programming interface (API)
@@ -41,7 +43,7 @@ Declares the duties of members.
 | :------------------      | :---------------------        | :-----------------------  |
 | Curates dataset(s)       | Writes/Updates scripts        | Puts data into production |
 | Loads raw dataset to GIT | Tests dataset load            | Removes data from production |
-| Creates GIT pull request | Maintains GIT scripts folder  |  | 
+| Creates GIT pull request | Maintains GIT scripts folder  |  |
 | Signoff on Prod dataset load  | Maintains GIT tmp-data folder | Maintains the GIT master branch |
 |                          | Maintains clean-data folder   | Maintains the Prod Environment |
 |                          | Creates clean-data set        |  |
@@ -56,7 +58,7 @@ The path which data moves through the process.
 | :-         | :- | :-         | :- | :-              | :- | :- |
 | Curator    | >  | raw-data   |    |                 |    |  |
 | Developer  | <  | raw-data   |    |                 |    |  |
-|            | >  | clean-data | >  | test-data       |    |  | 
+|            | >  | clean-data | >  | test-data       |    |  |
 | Maintainer | <  | clean-data |    |                 |    |  |
 |            | >  |            |    |                 | >  | open-data |
 | App(s)     | <  |            |    |                 | <  | open-data |
@@ -67,8 +69,8 @@ This is a best case scenario with no failures. Use as a guide to a successful co
 | Curator                 |    | Developer                  |    | Maintainer                   |
 | :---------------------- | :- | :------------------------- | :- | :--------------------------- |
 | Prepare Dataset CSV |     |    |                            |    |                              |
-| Upload Dataset          |    |                            |    |                              | 
-| Create GIT pull request |    |                            |    |                              | 
+| Upload Dataset          |    |                            |    |                              |
+| Create GIT pull request |    |                            |    |                              |
 | Notify Developer        | >  | Download Repo              |    |                              |
 |                         |    | Setup Environment Variables |    |                             |
 |                         |    | Write/Update Script        |    |                              |
@@ -76,8 +78,8 @@ This is a best case scenario with no failures. Use as a guide to a successful co
 |                         |    | Test Data Load             |    |                              |
 |                         |    | Test Application           |    |                              |
 |                         |    | Upload Branch              |    |                              |
-|                         |    | Notify Maintainer          | >  | Download refresh-data Branch | 
-|                         |    |                            |    | Setup Prod Data Environment  | 
+|                         |    | Notify Maintainer          | >  | Download refresh-data Branch |
+|                         |    |                            |    | Setup Prod Data Environment  |
 |                         |    |                            |    | Deploy to Production         |
 |                         |    |                            |    | Deployment Check             |
 | Deployment Check        |    |                            | <  | Notify Curator               |
@@ -87,13 +89,6 @@ This is a best case scenario with no failures. Use as a guide to a successful co
 
 
 ## <a id="data-processing">Data Processing</a>
-* Curator 
+* Curator
 * Developer
-* Maintainer 
-
-
-
-
-    
-
-
+* Maintainer
