@@ -6,7 +6,7 @@ The idea is a sharable staging area for wrangling data before transfer to an ope
 
 With some effort, we can create a repository of data and scripts to facilitate future data wrangling and help keep our open data manageable.
 
-Hi 
+Hi Hi
 
 ### Table of Contents
 * [Definitions](#definitions)        
